@@ -1,0 +1,23 @@
+{
+  "name": "blog_app_rails",
+  "version": "1.0.0",
+  "description": "![](https://img.shields.io/badge/Microverse-blueviolet)",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keza681/blog_app_rails.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/keza681/blog_app_rails/issues"
+  },
+  "homepage": "https://github.com/keza681/blog_app_rails#readme"
+}
