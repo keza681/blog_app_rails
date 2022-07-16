@@ -3,9 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
+gem 'ffi'
 gem 'rails', '~> 7.0.3'
 gem 'rubocop', '>= 1.0', '< 2.0'
-gem 'ffi'
 
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
