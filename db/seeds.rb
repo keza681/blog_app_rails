@@ -5,7 +5,23 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
-User.create(name: 'Tommy', photo: 'https://www.istockphoto.com/vector/businessman-icon-vector-symbol-for-web-flat-design-gm1390193778-447241583', bio: 'Driver from Tunisia.', posts_counter: 0)
-User.create(name: 'Sillia', photo: 'https://www.istockphoto.com/vector/businessman-avatar-icon-gm1298227218-391128738', bio: 'Doctor from Egypt', posts_counter: 0)
-User.create(name: 'Sarah', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Teacher from Morocco.', posts_counter: 0)
-User.create(name: 'Mike', photo: 'https://unsplash.com/photos/F_-0BxGuVvo', bio: 'Engineer from Algeria', posts_counter: 0)
+User.create!([
+    {name: "Tom", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Mexico.", posts_counter: 4},
+    {name: "Lilly", photo: "https://unsplash.com/photos/F_-0BxGuVvo", bio: "Teacher from Poland.", posts_counter: nil}
+  ])
+
+  Post.create!([
+  {author: User.first,title: "Hello2", text: "This is my second post", comments_counter: nil, likes_counter: nil },
+  {author: User.first, title: "Hello3", text: "This is my Third post", comments_counter: nil, likes_counter: nil },
+  {author: User.find(2),title: "Hello4", text: "This is my fourth post", comments_counter: nil, likes_counter: nil},
+  {author: User.find(2),title: "Hello", text: "This is my first post", comments_counter: nil, likes_counter: nil}
+  ])
+
+  Comment.create!([
+    {author_id: 1, post_id: 2, text: "commemt1"},
+    {author_id: 1, post_id: 2, text: "comment2"},
+    {author_id: 1, post_id: 2, text: "comment3"},
+    {author_id: 1, post_id: 2, text: "comment4"},
+    {author_id: 1, post_id: 2, text: "comment5"},
+    {author_id: 1, post_id: 2, text: "comment6"}
+  ])
