@@ -5,7 +5,7 @@
             <p class="user-bio"><%= post.text %></p>
         </div>
         <div class="comment__like">
-            <p class="number-posts">Comments:<%= post.comments_counter %> </p>  
+            <p class="number-posts">Comments:<%= post.recent_comments %> </p>  
             <p class="number-posts">Likes:<%= post.likes_counter %> </p>  
         </div>
         <%= link_to "See Post", user_post_path(post.user, post), class: "btn" %>
