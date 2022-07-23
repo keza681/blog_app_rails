@@ -1,3 +1,3 @@
 class Current < ApplicationRecord
-    attribute:user
+  attribute :user
 end
