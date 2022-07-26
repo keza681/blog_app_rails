@@ -144,3 +144,8 @@ textarea {
   font: 1.25rem sans-serif;
   margin-bottom: 0.5rem;
 }
+
+.custom-login {
+  width: 12%;
+  border-radius: 4px;
+}
