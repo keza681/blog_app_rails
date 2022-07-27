@@ -5,6 +5,10 @@ class CommentsController < ApplicationController
     post = Post.find_by(id: params[:post_id])
     @comment.post = post
     if @comment.save
+      flash[:notice] = 'Comment created successfully'
+      redirect_to user_post_path(post.user, post)
+    else
+      render 'new', status: :unprocessable_entity
     end
   end
 
