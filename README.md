@@ -22,17 +22,19 @@ Major language
 
 ## Getting Started
 
-To get a local copy up and running follow these simple example steps.
-- clone the project usin `https://github.com/keza681/blog_app_rails.git`
-then run : 
-- `bundle install`
-- `npm install`
+- Run git clone on this project at the desired directory:
+  ```
+  git clone  `https://github.com/keza681/blog_app_rails.git`
+  ```
+- Go to the cloned directory with `cd rails-blog-app`
+- Install the required dependecies with `bundle install`
+- Install npm dependencies with `npm install`
+- With Ruby on Rails and PostgreSQL installed in your environment, you can run `rails s` to see the website
 
+## Tests
 
-## Run tests
-
-Run `rspec`
-
+- To run the tests you must first have run `bundle install`
+- Then in the repository's main directory run `bundle exec rspec spec`
 ## Author
 
 👤 **Keza**
@@ -40,6 +42,13 @@ Run `rspec`
 - GitHub: [Visit my github](https://github.com/keza681)
 - Twitter: [Visit my twitter](https://twitter.com/LKeza19)
 - LinkedIn: [Linkedin Profile](https://www.linkedin.com/in/linda-keza-a10150218/)
+
+👤 **Alfred**
+
+- GitHub: [Visit my github](https://github.com/Alfredbis29)
+- Twitter: [Visit my twitter](https://twitter.com/AlfredBisimwa1)
+- LinkedIn: [Linkedin Profile](https://www.linkedin.com/in/Alfredbisimwa/)
+
 
 ## 🤝 Contributing
 
