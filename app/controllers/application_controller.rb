@@ -31,7 +31,6 @@ class ApplicationController < ActionController::Base
     @current_user ||= super || User.find(@current_user_id)
   end
 
-
   def configure_permitted_parameters
     attributes = %i[name email password]
     devise_parameter_sanitizer.permit(:sign_up, keys: attributes)
